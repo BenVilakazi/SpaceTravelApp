@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/shared/logo.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SpaceZ Travel | Technology</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+
+    <div class="container--technology">
+      <nav class="navigation">
+        <div class="navigation__logo-container">
+          <img
+            src="./assets/shared/logo.svg"
+            alt="Space Logo"
+            class="navigation__logo"
+          />
+        </div>
+        <ul class="navigation__menu">
+          <li class="navigation__item">
+            <a href="index.html" class="navigation__link"
+              ><span class="navigation__link__number">00</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="destinations.html" class="navigation__link"
+              ><span class="navigation__link__number">01</span>Destination</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="crew.html" class="navigation__link"
+              ><span class="navigation__link__number">02</span>Crew</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="technology.html" class="navigation__link active-nav"
+              ><span class="navigation__link__number">03</span>Technology</a
+            >
+          </li>
+          <a href="#" class="navigation__close-btn-link"
+            ><img
+              src="./assets/shared/icon-close.svg"
+              alt=""
+              class="navigation__close-bnt"
+            />
+          </a>
+        </ul>
+        <div class="navigation__mobile-menu">
+          <a href="#" class="navigation__open-btn-link"
+            ><img
+              src="./assets/shared/icon-hamburger.svg"
+              alt=""
+              class="navigation__open-bnt"
+          /></a>
+        </div>
+      </nav>
+      <main class="content-technology">
+        <h2 class="content-technology__title">
+          <div class="content-technology__title__number">03</div>
+          Space launch 101
+        </h2>
+        <div class="content-technology__text-container">
+          <div class="content-technology__numbers-container">
+            <a href="#" class="content-technology__number active-number">1</a>
+            <a href="#" class="content-technology__number">2</a>
+            <a href="#" class="content-technology__number">3</a>
+          </div>
+          <div class="content-technology__text">
+            <h5 class="content-technology__heading5">The terminology...</h5>
+            <h1 class="content-technology__heading1">Launch vehicle</h1>
+            <p class="content-technology__paragraph">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+        <div class="content-technology__img-container">
+          <picture
+            ><source
+              media="(max-width:900px)"
+              srcset="
+                ./assets/technology/image-launch-vehicle-landscape.jpg 900w
+              " />
+            <img
+              class="vehicle"
+              src="./assets/technology/image-launch-vehicle-portrait.jpg"
+              alt="Rocket"
+          /></picture>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

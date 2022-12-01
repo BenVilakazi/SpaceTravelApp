@@ -1,0 +1,264 @@
+.content--destinations {
+    padding: 0 25rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 8vh);
+  
+    @media only screen and(max-width: 1600px) {
+      padding: 0 15rem;
+    }
+  
+    @media only screen and(max-width: 1100px) {
+      padding: 0 5rem;
+    }
+  
+    @media only screen and(max-width: 900px) {
+      margin-top: 4rem;
+      justify-content: center;
+      padding: 2rem 5rem;
+    }
+  
+    @media only screen and(max-width: 550px) {
+      padding: 0 1rem;
+      justify-content: flex-start;
+      margin-top: 1rem;
+    }
+  
+    //PICK YOUR DESTINATION TEXT
+    &__text {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 300;
+      grid-column: 1 / span 4;
+      grid-row: 2 / span 1;
+  
+      @media only screen and(max-width: 1300px) {
+        grid-column: 1 / span 5;
+      }
+  
+      @media only screen and(max-width: 900px) {
+        align-self: flex-start;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 3.375px;
+        padding: 2rem 0;
+      }
+  
+      @media only screen and(max-width: 550px) {
+        padding-bottom: 3rem;
+        align-self: center;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+      }
+  
+      &__number {
+        padding-right: 3rem;
+        opacity: 0.25;
+        font-weight: 800;
+  
+        @media only screen and(max-width: 770px) {
+          padding-right: 1.5rem;
+        }
+      }
+    }
+  
+    //TEXT CONTAINER FOR THE GRID
+    &__text-container {
+      grid-column: 6 / span 3;
+      grid-row: 3 / span 4;
+  
+      @media only screen and(max-width: 1300px) {
+        grid-row: 2 / span 4;
+      }
+  
+      @media only screen and(max-width: 900px) {
+        padding-bottom: 0;
+      }
+    }
+  
+    &__menu {
+      font-family: "Barlow Condensed", sans-serif;
+      list-style: none;
+      display: flex;
+      font-size: 2rem;
+      padding: 0;
+      letter-spacing: 4px;
+  
+      @media only screen and(max-width: 900px) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        justify-content: center;
+      }
+  
+      @media only screen and(max-width: 550px) {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px;
+      }
+    }
+  
+    &__item {
+      transition: all 0.3s;
+  
+      &:not(:first-child) {
+        padding-left: 3rem;
+      }
+  
+      &:hover .content--destinations__link {
+        border-bottom: 3px solid rgba(248, 248, 248, 0.6);
+      }
+    }
+  
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+      transition: all 0.4s;
+      border-bottom: 3px solid transparent;
+    }
+  
+    &__heading1 {
+      font-size: 10rem;
+      padding: 2rem 0;
+  
+      @media only screen and(max-width: 900px) {
+        font-size: 80px;
+        line-height: 92px;
+        padding: 1rem 0;
+      }
+  
+      @media only screen and(max-width:550px) {
+        font-size: 56px;
+        line-height: 64px;
+      }
+    }
+  
+    &__paragraph {
+      font-family: "Barlow", sans-serif;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: #d0d6f9;
+      // padding-bottom: 5rem;
+      border-bottom: 1px solid #383b4b;
+      height: 14rem;
+  
+      @media only screen and(max-width: 1600px) {
+        height: 18rem;
+      }
+  
+      @media only screen and(max-width: 1000px) {
+        height: 22rem;
+      }
+  
+      @media only screen and(max-width: 900px) {
+        height: 11rem;
+        font-size: 16px;
+        line-height: 28px;
+      }
+  
+      @media only screen and(max-width: 770px) {
+        height: 14rem;
+      }
+  
+      @media only screen and(max-width: 550px) {
+        //height: 12rem;
+        padding: 0 3rem;
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  
+    &__stats {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  
+      @media only screen and(max-width: 550px) {
+        flex-direction: column;
+        padding-top: 0;
+      }
+  
+      &-container {
+        width: 100%;
+  
+        &:not(:last-child) {
+          padding-right: 10rem;
+  
+          @media only screen and(max-width: 1500px) {
+            padding-right: 7rem;
+          }
+  
+          @media only screen and(max-width: 1300px) {
+            padding-right: 3rem;
+          }
+  
+          @media only screen and(max-width: 550px) {
+            padding: 2rem 0;
+          }
+        }
+      }
+  
+      &__text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: #d0d6f9;
+  
+        @media only screen and(max-width: 900px) {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 2.3625px;
+        }
+  
+        @media only screen and(max-width: 550px) {
+          padding-bottom: 1rem;
+        }
+      }
+  
+      &__num {
+        font-family: "Bellefair", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-top: 1rem;
+      }
+    }
+  }
+  //PLANET IMAGE
+  .content__planet-container {
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 4;
+  
+    @media only screen and(max-width: 1500px) {
+      grid-column: 1 / span 3;
+    }
+  
+    @media only screen and(max-width: 1100px) {
+      grid-row: 4 / span 4;
+      grid-column: 2 / span 3;
+    }
+  
+    @media only screen and(max-width: 900px) {
+      max-width: 50%;
+      padding-bottom: 3rem;
+    }
+  }
+  
+  //UNDERLINE UNDER PLANET NAMES
+  .active-link {
+    border-bottom: 3px solid #fff !important;
+    opacity: 1;
+  }
+  

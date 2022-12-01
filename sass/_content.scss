@@ -1,0 +1,212 @@
+//MAIN CONTENT GRID
+
+.content,
+.content--destinations,
+.content-crew,
+.content-technology {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 10vh);
+  color: #fff;
+  padding: 0 30rem;
+  position: relative;
+
+  @media only screen and(max-width: 1500px) {
+    padding: 0 20rem;
+  }
+  @media only screen and(max-width: 1200px) {
+    padding: 0 10rem;
+  }
+  @media only screen and(max-width: 1000px) {
+    padding: 0 5rem;
+  }
+
+  @media only screen and(max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 7rem 0 7rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media only screen and(max-width: 550px) {
+    padding: 3rem 7rem 0 7rem;
+  }
+
+  //TEXT CONTENT
+
+  &__text-container {
+    grid-row: 4 / span 5;
+    grid-column: 1 / span 2;
+
+    @media only screen and(max-width: 1300px) {
+      grid-row: 3 / span 5;
+    }
+
+    @media only screen and(max-width: 1100px) {
+      grid-row: 3 / span 4;
+    }
+
+    @media only screen and(max-width: 900px) {
+      padding-bottom: 15rem;
+    }
+
+    @media only screen and(max-width: 770px) {
+      padding-bottom: 5rem;
+    }
+  }
+
+  &__heading5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: normal;
+    padding-bottom: 2rem;
+    color: #d0d6f9;
+
+    @media only screen and(max-width: 1100px) {
+      padding-bottom: 1rem;
+    }
+
+    @media only screen and(max-width: 900px) {
+      padding-bottom: 1rem;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    @media only screen and(max-width: 550px) {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+    }
+  }
+
+  &__heading1 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 15rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: normal;
+    padding-bottom: 4rem;
+
+    @media only screen and(max-width: 1100px) {
+      font-size: 12rem;
+      padding-bottom: 1rem;
+    }
+
+    @media only screen and(max-width: 900px) {
+      font-size: 150px;
+      line-height: 150px;
+    }
+
+    @media only screen and(max-width: 550px) {
+      font-size: 80px;
+      line-height: 100px;
+    }
+  }
+
+  &__paragraph {
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    color: #d0d6f9;
+
+    @media only screen and(max-width: 900px) {
+      padding: 0 7rem;
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    @media only screen and(max-width: 770px) {
+      padding: 0 5rem;
+    }
+
+    @media only screen and(max-width: 550px) {
+      padding: 0;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  //HOME PAGE BUTTON
+
+  &__btn-container {
+    grid-row: 5 / span 2;
+    grid-column: 4 / span 1;
+    background-color: #fff;
+    height: 27rem;
+    width: 27rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    &:hover:hover::after {
+      transform: scale(1.4);
+    }
+
+    &:active::after {
+      opacity: 0;
+    }
+
+    &::after {
+      content: "";
+      background: #ffffff;
+      mix-blend-mode: normal;
+      opacity: 0.1;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      z-index: -1;
+      transition: all 0.3s;
+    }
+
+    @media only screen and(max-width: 1300px) {
+      grid-row: 3 / span 2;
+    }
+
+    @media only screen and(max-width: 900px) {
+      height: 24rem;
+      width: 24rem;
+    }
+
+    @media only screen and(max-width: 550px) {
+      height: 15rem;
+      width: 15rem;
+    }
+  }
+
+  &__btn {
+    font-size: 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0b0d17;
+    letter-spacing: 5px;
+
+    @media only screen and(max-width: 900px) {
+      font-size: 32px;
+      line-height: 37px;
+      letter-spacing: 2px;
+    }
+    @media only screen and(max-width: 550px) {
+      font-size: 20px;
+      line-height: 23px;
+      letter-spacing: 1.25px;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/shared/logo.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Barlow:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>SpaceZ Travel | Destinations</title>
+  </head>
+  <body>
+    <div id="preloader"></div>
+    <div class="container--destinations">
+      <nav class="navigation">
+        <div class="navigation__logo-container">
+          <img
+            src="./assets/shared/logo.svg"
+            alt="Space Logo"
+            class="navigation__logo"
+          />
+        </div>
+        <ul class="navigation__menu">
+          <li class="navigation__item">
+            <a href="index.html"  class="navigation__link"
+              ><span class="navigation__link__number">00</span>Home</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="destination-moon.html"
+              class="navigation__link active-nav"
+              ><span class="navigation__link__number">01</span>Destination</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="crew.html" class="navigation__link"
+              ><span class="navigation__link__number">02</span>Crew</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="technology.html" class="navigation__link"
+              ><span class="navigation__link__number">03</span>Technology</a
+            >
+          </li>
+          <a href="#" class="navigation__close-btn-link"
+            ><img
+              src="./assets/shared/icon-close.svg"
+              alt=""
+              class="navigation__close-bnt"
+            />
+          </a>
+        </ul>
+        <div class="navigation__mobile-menu">
+          <a href="#" class="navigation__open-btn-link"
+            ><img
+              src="./assets/shared/icon-hamburger.svg"
+              alt=""
+              class="navigation__open-bnt"
+          /></a>
+        </div>
+      </nav>
+      <main class="content--destinations">
+        <h2 class="content--destinations__text">
+          <span class="content--destinations__text__number">01</span
+            >Pick your destination</h2>
+        <div class="content__planet-container">
+          <img src="./assets/destination/image-moon.png" alt="Moon" class="planet-img" id="planet">
+        </div>
+        <div class="content--destinations__text-container">
+          <ul class="content--destinations__menu">
+            <li class="content--destinationst__item">
+              <a href="#" class="content--destinations__link active-link">Moon</a>
+            </li>
+            <li class="content--destinations__item">
+              <a href="#" class="content--destinations__link">Mars</a>
+            </li>
+            <li class="content--destinations__item">
+              <a href="#" class="content--destinations__link">Europa</a>
+            </li>
+            <li class="content--destinations__item">
+              <a href="#" class="content--destinations__link">Titan</a>
+            </li>
+          </ul>
+          <h1 class="content--destinations__heading1 name">Moon</h1>
+          <p class="content--destinations__paragraph">
+             See our planet as you’ve never seen it before. A perfect
+            relaxing trip away to help regain perspective and come back
+            refreshed. While you’re there, take in some history by visiting the
+            Luna 2 and Apollo 11 landing sites. 
+            <div class="content--destinations__stats">
+              <div class="content--destinations__stats-container">
+                <p class="content--destinations__stats__text">Avg. distance</p>
+                <p class="content--destinations__stats__num distance"> 384,400 km </p>
+                </div>
+              <div class="content--destinations__stats-container">
+                <p class="content--destinations__stats__text">Est. travel time</p>
+                <p class="content--destinations__stats__num time">3 days</p>
+                </div>
+              </div>
+      </main>
+    </div>
+    <script type="text/javascript" src="data.json"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

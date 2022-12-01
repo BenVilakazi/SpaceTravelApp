@@ -1,0 +1,1113 @@
+.navigation {
+    font-size: 1.6rem;
+    font-family: "Barlow Condensed", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.5rem;
+    position: relative; }
+    @media only screen and (max-width: 900px) {
+      .navigation {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2.3625px; } }
+    @media only screen and (max-width: 550px) {
+      .navigation {
+        height: 7rem; } }
+    .navigation__logo-container {
+      padding-left: 6rem; }
+      @media only screen and (max-width: 550px) {
+        .navigation__logo-container {
+          padding-left: 4rem; } }
+      .navigation__logo-container::after {
+        content: "";
+        width: 65rem;
+        height: 1px;
+        background: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        z-index: 2; }
+        @media only screen and (max-width: 1800px) {
+          .navigation__logo-container::after {
+            left: 13%; } }
+        @media only screen and (max-width: 1600px) {
+          .navigation__logo-container::after {
+            left: 10%;
+            width: 60rem; } }
+        @media only screen and (max-width: 1300px) {
+          .navigation__logo-container::after {
+            width: 50rem; } }
+        @media only screen and (max-width: 1100px) {
+          .navigation__logo-container::after {
+            width: 40rem; } }
+        @media only screen and (max-width: 1000px) {
+          .navigation__logo-container::after {
+            display: none; } }
+    .navigation__logo {
+      height: 4rem;
+      width: 4rem; }
+    .navigation__menu {
+      display: flex;
+      flex: 0 0 50%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 2.5px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(81.5485px);
+      position: relative; }
+      @media only screen and (max-width: 1500px) {
+        .navigation__menu {
+          padding-left: 3rem;
+          padding-right: 3rem; } }
+      @media only screen and (max-width: 550px) {
+        .navigation__menu {
+          position: absolute;
+          padding-top: 7rem;
+          flex-direction: column;
+          justify-content: flex-start;
+          top: 0;
+          right: 0;
+          transform: translateX(100%);
+          z-index: 99;
+          width: 65%;
+          height: 100vh;
+          margin: 0;
+          align-items: flex-start;
+          font-size: 2rem;
+          transition: all 0.3s; } }
+    .navigation__item {
+      list-style: none;
+      text-transform: uppercase;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      cursor: pointer;
+      transition: all 0.4s; }
+      .navigation__item:not(:last-child) {
+        padding-right: 4rem; }
+        @media only screen and (max-width: 550px) {
+          .navigation__item:not(:last-child) {
+            padding-right: 0; } }
+      .navigation__item:hover .navigation__link {
+        border-bottom: 3px solid rgba(248, 248, 248, 0.6); }
+        @media only screen and (max-width: 550px) {
+          .navigation__item:hover .navigation__link {
+            border-bottom: none; } }
+      @media only screen and (max-width: 550px) {
+        .navigation__item {
+          border-bottom: none; } }
+    .navigation__link {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 300;
+      position: relative;
+      padding-bottom: 3.3rem;
+      border-bottom: 3px solid transparent;
+      transition: all 0.5s; }
+      @media only screen and (max-width: 550px) {
+        .navigation__link {
+          border-bottom: none; } }
+      .navigation__link__number {
+        font-weight: 700;
+        padding-right: 1rem; }
+        @media only screen and (max-width: 900px) {
+          .navigation__link__number {
+            display: none; } }
+        @media only screen and (max-width: 550px) {
+          .navigation__link__number {
+            display: inline-block; } }
+    .navigation__mobile-menu {
+      display: none; }
+      @media only screen and (max-width: 550px) {
+        .navigation__mobile-menu {
+          display: block;
+          padding: 0 3rem; } }
+    .navigation__close-btn-link {
+      display: none; }
+      @media only screen and (max-width: 550px) {
+        .navigation__close-btn-link {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 3rem 3rem; } }
+    .navigation .active {
+      transform: translateX(0); }
+    .navigation .active-nav {
+      border-bottom: 3px solid #fff !important; }
+      @media only screen and (max-width: 550px) {
+        .navigation .active-nav {
+          border-bottom: none !important; } }
+  
+  .content,
+  .content--destinations,
+  .content-crew,
+  .content-technology {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 10vh);
+    color: #fff;
+    padding: 0 30rem;
+    position: relative; }
+    @media only screen and (max-width: 1500px) {
+      .content,
+      .content--destinations,
+      .content-crew,
+      .content-technology {
+        padding: 0 20rem; } }
+    @media only screen and (max-width: 1200px) {
+      .content,
+      .content--destinations,
+      .content-crew,
+      .content-technology {
+        padding: 0 10rem; } }
+    @media only screen and (max-width: 1000px) {
+      .content,
+      .content--destinations,
+      .content-crew,
+      .content-technology {
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 900px) {
+      .content,
+      .content--destinations,
+      .content-crew,
+      .content-technology {
+        display: flex;
+        flex-direction: column;
+        padding: 15rem 7rem 0 7rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center; } }
+    @media only screen and (max-width: 550px) {
+      .content,
+      .content--destinations,
+      .content-crew,
+      .content-technology {
+        padding: 3rem 7rem 0 7rem; } }
+    .content__text-container,
+    .content--destinations__text-container,
+    .content-crew__text-container,
+    .content-technology__text-container {
+      grid-row: 4 / span 5;
+      grid-column: 1 / span 2; }
+      @media only screen and (max-width: 1300px) {
+        .content__text-container,
+        .content--destinations__text-container,
+        .content-crew__text-container,
+        .content-technology__text-container {
+          grid-row: 3 / span 5; } }
+      @media only screen and (max-width: 1100px) {
+        .content__text-container,
+        .content--destinations__text-container,
+        .content-crew__text-container,
+        .content-technology__text-container {
+          grid-row: 3 / span 4; } }
+      @media only screen and (max-width: 900px) {
+        .content__text-container,
+        .content--destinations__text-container,
+        .content-crew__text-container,
+        .content-technology__text-container {
+          padding-bottom: 15rem; } }
+      @media only screen and (max-width: 770px) {
+        .content__text-container,
+        .content--destinations__text-container,
+        .content-crew__text-container,
+        .content-technology__text-container {
+          padding-bottom: 5rem; } }
+    .content__heading5,
+    .content--destinations__heading5,
+    .content-crew__heading5,
+    .content-technology__heading5 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 2.8rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 4px;
+      line-height: normal;
+      padding-bottom: 2rem;
+      color: #d0d6f9; }
+      @media only screen and (max-width: 1100px) {
+        .content__heading5,
+        .content--destinations__heading5,
+        .content-crew__heading5,
+        .content-technology__heading5 {
+          padding-bottom: 1rem; } }
+      @media only screen and (max-width: 900px) {
+        .content__heading5,
+        .content--destinations__heading5,
+        .content-crew__heading5,
+        .content-technology__heading5 {
+          padding-bottom: 1rem;
+          font-size: 20px;
+          line-height: 24px; } }
+      @media only screen and (max-width: 550px) {
+        .content__heading5,
+        .content--destinations__heading5,
+        .content-crew__heading5,
+        .content-technology__heading5 {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px; } }
+    .content__heading1,
+    .content--destinations__heading1,
+    .content-crew__heading1,
+    .content-technology__heading1 {
+      font-family: "Bellefair", sans-serif;
+      font-size: 15rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      line-height: normal;
+      padding-bottom: 4rem; }
+      @media only screen and (max-width: 1100px) {
+        .content__heading1,
+        .content--destinations__heading1,
+        .content-crew__heading1,
+        .content-technology__heading1 {
+          font-size: 12rem;
+          padding-bottom: 1rem; } }
+      @media only screen and (max-width: 900px) {
+        .content__heading1,
+        .content--destinations__heading1,
+        .content-crew__heading1,
+        .content-technology__heading1 {
+          font-size: 150px;
+          line-height: 150px; } }
+      @media only screen and (max-width: 550px) {
+        .content__heading1,
+        .content--destinations__heading1,
+        .content-crew__heading1,
+        .content-technology__heading1 {
+          font-size: 80px;
+          line-height: 100px; } }
+    .content__paragraph,
+    .content--destinations__paragraph,
+    .content-crew__paragraph,
+    .content-technology__paragraph {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      color: #d0d6f9; }
+      @media only screen and (max-width: 900px) {
+        .content__paragraph,
+        .content--destinations__paragraph,
+        .content-crew__paragraph,
+        .content-technology__paragraph {
+          padding: 0 7rem;
+          font-size: 20px;
+          line-height: 28px; } }
+      @media only screen and (max-width: 770px) {
+        .content__paragraph,
+        .content--destinations__paragraph,
+        .content-crew__paragraph,
+        .content-technology__paragraph {
+          padding: 0 5rem; } }
+      @media only screen and (max-width: 550px) {
+        .content__paragraph,
+        .content--destinations__paragraph,
+        .content-crew__paragraph,
+        .content-technology__paragraph {
+          padding: 0;
+          font-size: 15px;
+          line-height: 25px; } }
+    .content__btn-container,
+    .content--destinations__btn-container,
+    .content-crew__btn-container,
+    .content-technology__btn-container {
+      grid-row: 5 / span 2;
+      grid-column: 4 / span 1;
+      background-color: #fff;
+      height: 27rem;
+      width: 27rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      text-align: center; }
+      .content__btn-container:hover:hover::after,
+      .content--destinations__btn-container:hover:hover::after,
+      .content-crew__btn-container:hover:hover::after,
+      .content-technology__btn-container:hover:hover::after {
+        transform: scale(1.4); }
+      .content__btn-container:active::after,
+      .content--destinations__btn-container:active::after,
+      .content-crew__btn-container:active::after,
+      .content-technology__btn-container:active::after {
+        opacity: 0; }
+      .content__btn-container::after,
+      .content--destinations__btn-container::after,
+      .content-crew__btn-container::after,
+      .content-technology__btn-container::after {
+        content: "";
+        background: #ffffff;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        z-index: -1;
+        transition: all 0.3s; }
+      @media only screen and (max-width: 1300px) {
+        .content__btn-container,
+        .content--destinations__btn-container,
+        .content-crew__btn-container,
+        .content-technology__btn-container {
+          grid-row: 3 / span 2; } }
+      @media only screen and (max-width: 900px) {
+        .content__btn-container,
+        .content--destinations__btn-container,
+        .content-crew__btn-container,
+        .content-technology__btn-container {
+          height: 24rem;
+          width: 24rem; } }
+      @media only screen and (max-width: 550px) {
+        .content__btn-container,
+        .content--destinations__btn-container,
+        .content-crew__btn-container,
+        .content-technology__btn-container {
+          height: 15rem;
+          width: 15rem; } }
+    .content__btn,
+    .content--destinations__btn,
+    .content-crew__btn,
+    .content-technology__btn {
+      font-size: 3rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #0b0d17;
+      letter-spacing: 5px; }
+      @media only screen and (max-width: 900px) {
+        .content__btn,
+        .content--destinations__btn,
+        .content-crew__btn,
+        .content-technology__btn {
+          font-size: 32px;
+          line-height: 37px;
+          letter-spacing: 2px; } }
+      @media only screen and (max-width: 550px) {
+        .content__btn,
+        .content--destinations__btn,
+        .content-crew__btn,
+        .content-technology__btn {
+          font-size: 20px;
+          line-height: 23px;
+          letter-spacing: 1.25px; } }
+  
+  .content--destinations {
+    padding: 0 25rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 8vh); }
+    @media only screen and (max-width: 1600px) {
+      .content--destinations {
+        padding: 0 15rem; } }
+    @media only screen and (max-width: 1100px) {
+      .content--destinations {
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 900px) {
+      .content--destinations {
+        margin-top: 4rem;
+        justify-content: center;
+        padding: 2rem 5rem; } }
+    @media only screen and (max-width: 550px) {
+      .content--destinations {
+        padding: 0 1rem;
+        justify-content: flex-start;
+        margin-top: 1rem; } }
+    .content--destinations__text {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-weight: 300;
+      grid-column: 1 / span 4;
+      grid-row: 2 / span 1; }
+      @media only screen and (max-width: 1300px) {
+        .content--destinations__text {
+          grid-column: 1 / span 5; } }
+      @media only screen and (max-width: 900px) {
+        .content--destinations__text {
+          align-self: flex-start;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 3.375px;
+          padding: 2rem 0; } }
+      @media only screen and (max-width: 550px) {
+        .content--destinations__text {
+          padding-bottom: 3rem;
+          align-self: center;
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px; } }
+      .content--destinations__text__number {
+        padding-right: 3rem;
+        opacity: 0.25;
+        font-weight: 800; }
+        @media only screen and (max-width: 770px) {
+          .content--destinations__text__number {
+            padding-right: 1.5rem; } }
+    .content--destinations__text-container {
+      grid-column: 6 / span 3;
+      grid-row: 3 / span 4; }
+      @media only screen and (max-width: 1300px) {
+        .content--destinations__text-container {
+          grid-row: 2 / span 4; } }
+      @media only screen and (max-width: 900px) {
+        .content--destinations__text-container {
+          padding-bottom: 0; } }
+    .content--destinations__menu {
+      font-family: "Barlow Condensed", sans-serif;
+      list-style: none;
+      display: flex;
+      font-size: 2rem;
+      padding: 0;
+      letter-spacing: 4px; }
+      @media only screen and (max-width: 900px) {
+        .content--destinations__menu {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: 2.7px;
+          justify-content: center; } }
+      @media only screen and (max-width: 550px) {
+        .content--destinations__menu {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 2.3625px; } }
+    .content--destinations__item {
+      transition: all 0.3s; }
+      .content--destinations__item:not(:first-child) {
+        padding-left: 3rem; }
+      .content--destinations__item:hover .content--destinations__link {
+        border-bottom: 3px solid rgba(248, 248, 248, 0.6); }
+    .content--destinations__link {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+      transition: all 0.4s;
+      border-bottom: 3px solid transparent; }
+    .content--destinations__heading1 {
+      font-size: 10rem;
+      padding: 2rem 0; }
+      @media only screen and (max-width: 900px) {
+        .content--destinations__heading1 {
+          font-size: 80px;
+          line-height: 92px;
+          padding: 1rem 0; } }
+      @media only screen and (max-width: 550px) {
+        .content--destinations__heading1 {
+          font-size: 56px;
+          line-height: 64px; } }
+    .content--destinations__paragraph {
+      font-family: "Barlow", sans-serif;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: #d0d6f9;
+      border-bottom: 1px solid #383b4b;
+      height: 14rem; }
+      @media only screen and (max-width: 1600px) {
+        .content--destinations__paragraph {
+          height: 18rem; } }
+      @media only screen and (max-width: 1000px) {
+        .content--destinations__paragraph {
+          height: 22rem; } }
+      @media only screen and (max-width: 900px) {
+        .content--destinations__paragraph {
+          height: 11rem;
+          font-size: 16px;
+          line-height: 28px; } }
+      @media only screen and (max-width: 770px) {
+        .content--destinations__paragraph {
+          height: 14rem; } }
+      @media only screen and (max-width: 550px) {
+        .content--destinations__paragraph {
+          padding: 0 3rem;
+          font-size: 15px;
+          line-height: 25px; } }
+    .content--destinations__stats {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      @media only screen and (max-width: 550px) {
+        .content--destinations__stats {
+          flex-direction: column;
+          padding-top: 0; } }
+      .content--destinations__stats-container {
+        width: 100%; }
+        .content--destinations__stats-container:not(:last-child) {
+          padding-right: 10rem; }
+          @media only screen and (max-width: 1500px) {
+            .content--destinations__stats-container:not(:last-child) {
+              padding-right: 7rem; } }
+          @media only screen and (max-width: 1300px) {
+            .content--destinations__stats-container:not(:last-child) {
+              padding-right: 3rem; } }
+          @media only screen and (max-width: 550px) {
+            .content--destinations__stats-container:not(:last-child) {
+              padding: 2rem 0; } }
+      .content--destinations__stats__text {
+        font-family: "Barlow Condensed", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: #d0d6f9; }
+        @media only screen and (max-width: 900px) {
+          .content--destinations__stats__text {
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 2.3625px; } }
+        @media only screen and (max-width: 550px) {
+          .content--destinations__stats__text {
+            padding-bottom: 1rem; } }
+      .content--destinations__stats__num {
+        font-family: "Bellefair", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-top: 1rem; }
+  
+  .content__planet-container {
+    grid-column: 2 / span 3;
+    grid-row: 4 / span 4; }
+    @media only screen and (max-width: 1500px) {
+      .content__planet-container {
+        grid-column: 1 / span 3; } }
+    @media only screen and (max-width: 1100px) {
+      .content__planet-container {
+        grid-row: 4 / span 4;
+        grid-column: 2 / span 3; } }
+    @media only screen and (max-width: 900px) {
+      .content__planet-container {
+        max-width: 50%;
+        padding-bottom: 3rem; } }
+  
+  .active-link {
+    border-bottom: 3px solid #fff !important;
+    opacity: 1; }
+  
+  .content-crew {
+    grid-template-columns: repeat(8, 1fr); }
+    @media only screen and (max-width: 1800px) {
+      .content-crew {
+        padding: 0 20rem; } }
+    @media only screen and (max-width: 1600px) {
+      .content-crew {
+        padding: 0 15rem; } }
+    @media only screen and (max-width: 1300px) {
+      .content-crew {
+        padding: 0 10rem; } }
+    @media only screen and (max-width: 1200px) {
+      .content-crew {
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 900px) {
+      .content-crew {
+        height: 100%;
+        align-items: baseline;
+        justify-content: space-around; } }
+    @media only screen and (max-width: 770px) {
+      .content-crew {
+        padding: 0 2rem; } }
+    @media only screen and (max-width: 550px) {
+      .content-crew {
+        align-items: center;
+        padding: 0; } }
+    .content-crew__title {
+      display: inline;
+      grid-column: 1 / span 3;
+      grid-row: 2 / span 1;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 2.8rem;
+      line-height: 3rem;
+      letter-spacing: 4.725px;
+      text-transform: uppercase;
+      font-weight: 400; }
+      .content-crew__title__number {
+        display: inline;
+        padding-right: 2rem;
+        opacity: 0.25;
+        font-weight: 700; }
+      @media only screen and (max-width: 900px) {
+        .content-crew__title {
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 3.375px; } }
+      @media only screen and (max-width: 900px) {
+        .content-crew__title {
+          flex: 0 0 5%; } }
+    .content-crew__text-container {
+      grid-row: 5 / span 3;
+      grid-column: 1 / span 4; }
+      @media only screen and (max-width: 1800px) {
+        .content-crew__text-container {
+          grid-row: 4 / span 3; } }
+      @media only screen and (max-width: 1500px) {
+        .content-crew__text-container {
+          grid-column: 1 / span 5; } }
+      @media only screen and (max-width: 900px) {
+        .content-crew__text-container {
+          align-self: flex-start;
+          padding-bottom: 0; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew__text-container {
+          order: 1;
+          flex: 0 0 40%; } }
+    .content-crew__heading5, .content-crew__heading1 {
+      font-family: "Bellefair", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: #ffffff;
+      mix-blend-mode: normal; }
+    .content-crew__heading5 {
+      font-size: 3.2rem;
+      line-height: 3.7rem;
+      opacity: 0.5; }
+      @media only screen and (max-width: 1300px) {
+        .content-crew__heading5 {
+          font-size: 2.7rem; } }
+      @media only screen and (max-width: 900px) {
+        .content-crew__heading5 {
+          font-size: 24px;
+          line-height: 28px; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew__heading5 {
+          font-size: 16px;
+          line-height: 18px; } }
+    .content-crew__heading1 {
+      font-size: 5.6rem;
+      line-height: 6.4rem;
+      padding-bottom: 2rem;
+      display: inline; }
+      @media only screen and (max-width: 1300px) {
+        .content-crew__heading1 {
+          font-size: 4.6rem; } }
+      @media only screen and (max-width: 900px) {
+        .content-crew__heading1 {
+          font-size: 40px;
+          line-height: 46px; } }
+      @media only screen and (max-width: 770px) {
+        .content-crew__heading1 {
+          padding-bottom: 5rem; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew__heading1 {
+          font-size: 24px;
+          line-height: 28px; } }
+    .content-crew__paragraph {
+      font-family: "Barlow", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      color: #d0d6f9;
+      height: 13rem; }
+      @media only screen and (max-width: 900px) {
+        .content-crew__paragraph {
+          font-size: 16px;
+          line-height: 28px;
+          height: 11rem;
+          padding: 0 10rem;
+          margin-bottom: 2rem; } }
+      @media only screen and (max-width: 770px) {
+        .content-crew__paragraph {
+          height: 10rem;
+          margin-bottom: 5rem;
+          padding: 0 7rem; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew__paragraph {
+          height: 15rem;
+          padding: 2rem;
+          order: 3;
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 1rem; } }
+    .content-crew__dots {
+      display: flex;
+      padding-top: 5rem; }
+      @media only screen and (max-width: 900px) {
+        .content-crew__dots {
+          padding-top: 0;
+          width: 100%;
+          justify-content: center; } }
+    .content-crew__dot {
+      width: 2rem;
+      height: 2rem;
+      background: #fff;
+      border-radius: 50px;
+      opacity: 0.17;
+      transition: all 0.4s; }
+      .content-crew__dot:not(:last-child) {
+        margin-right: 3rem; }
+      .content-crew__dot:hover {
+        opacity: 1; }
+      @media only screen and (max-width: 900px) {
+        .content-crew__dot {
+          width: 1.5rem;
+          height: 1.5rem; } }
+    .content-crew .active-dot {
+      opacity: 1 !important; }
+    .content-crew__img-container {
+      grid-row: 4 / span 7;
+      grid-column: 6 / span 3;
+      position: relative; }
+      @media only screen and (max-width: 900px) {
+        .content-crew__img-container {
+          margin: 0 auto;
+          bottom: 0rem;
+          height: 55rem;
+          overflow: visible;
+          width: 100%; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew__img-container {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+          flex: 0 0 33%;
+          display: block;
+          position: relative;
+          width: 100%; } }
+    .content-crew .crew-member {
+      position: absolute;
+      bottom: -5.1rem;
+      max-width: none; }
+      @media only screen and (max-width: 1600px) {
+        .content-crew .crew-member {
+          max-width: 100%; } }
+      @media only screen and (max-width: 900px) {
+        .content-crew .crew-member {
+          bottom: 0;
+          left: 0;
+          right: 0;
+          top: 0;
+          margin: 0 auto;
+          max-width: 60%; } }
+      @media only screen and (max-width: 550px) {
+        .content-crew .crew-member {
+          top: auto;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          max-width: 60%; } }
+  
+  .content-technology {
+    padding: 0 20rem; }
+    @media only screen and (max-width: 1800px) {
+      .content-technology {
+        padding: 0 15rem; } }
+    @media only screen and (max-width: 1500px) {
+      .content-technology {
+        padding: 0 10rem; } }
+    @media only screen and (max-width: 1200px) {
+      .content-technology {
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 1000px) {
+      .content-technology {
+        padding: 0; } }
+    @media only screen and (max-width: 900px) {
+      .content-technology {
+        justify-content: space-between; } }
+    .content-technology__title {
+      font-family: "Barlow Condensed", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 34px;
+      text-transform: uppercase;
+      letter-spacing: 4.725px;
+      grid-column: 1 / span 4;
+      grid-row: 2 / span 1; }
+      @media only screen and (max-width: 1000px) {
+        .content-technology__title {
+          padding-left: 3rem; } }
+      @media only screen and (max-width: 900px) {
+        .content-technology__title {
+          align-self: flex-start;
+          order: 0;
+          padding: 3rem;
+          font-size: 20px;
+          line-height: 24px;
+          letter-spacing: 3.375px; } }
+      .content-technology__title__number {
+        display: inline;
+        padding-right: 3rem;
+        opacity: 0.25;
+        font-weight: 800; }
+    .content-technology__text-container {
+      display: flex;
+      justify-content: space-between;
+      grid-row: 4 / span 4;
+      grid-column: 1 / span 2; }
+      @media only screen and (max-width: 1500px) {
+        .content-technology__text-container {
+          grid-column: 1 / span 3; } }
+      @media only screen and (max-width: 900px) {
+        .content-technology__text-container {
+          flex-direction: column;
+          order: 2; } }
+    .content-technology__numbers-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 80%;
+      flex: 0 0 30%;
+      position: relative; }
+      @media only screen and (max-width: 1800px) {
+        .content-technology__numbers-container {
+          flex: 0 0 25%; } }
+      @media only screen and (max-width: 1100px) {
+        .content-technology__numbers-container {
+          flex: 0 0 20%; } }
+      @media only screen and (max-width: 900px) {
+        .content-technology__numbers-container {
+          flex-direction: row;
+          justify-content: center;
+          padding-bottom: 3rem; } }
+    .content-technology__number {
+      font-family: "Bellefair", sans-serif;
+      width: 80px;
+      height: 80px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 37px;
+      text-align: center;
+      letter-spacing: 2px;
+      border: 1px solid rgba(248, 248, 248, 0.6);
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #fff;
+      transition: border 0.4s; }
+      .content-technology__number:hover {
+        border: 1px solid #fff; }
+      @media only screen and (max-width: 900px) {
+        .content-technology__number {
+          width: 60px;
+          height: 60px;
+          font-size: 24px;
+          line-height: 28px;
+          letter-spacing: 1.5px; }
+          .content-technology__number:not(:last-child) {
+            margin-right: 3rem; } }
+    .content-technology .active-number {
+      background-color: #fff;
+      color: #0b0d17; }
+    .content-technology__heading5 {
+      font-family: "Barlow Condensed", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.8rem;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      color: #d0d6f9; }
+      @media only screen and (max-width: 900px) {
+        .content-technology__heading5 {
+          font-size: 16px; } }
+    .content-technology__heading1 {
+      font-family: "Bellefair", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 64px;
+      padding-bottom: 2rem; }
+      @media only screen and (max-width: 900px) {
+        .content-technology__heading1 {
+          font-size: 40px;
+          line-height: 46px;
+          padding-bottom: 0; } }
+    .content-technology__paragraph {
+      font-family: Barlow;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 3.7rem;
+      color: #d0d6f9;
+      padding-right: 5rem; }
+      @media only screen and (max-width: 1200px) {
+        .content-technology__paragraph {
+          padding-right: 10rem; } }
+      @media only screen and (max-width: 900px) {
+        .content-technology__paragraph {
+          padding: 0rem 15rem;
+          font-size: 16px;
+          line-height: 28px; } }
+      @media only screen and (max-width: 550px) {
+        .content-technology__paragraph {
+          padding: 0 5rem; } }
+    .content-technology__img-container {
+      grid-column: 4 / span 1;
+      grid-row: 3 / span 6;
+      position: relative; }
+      @media only screen and (max-width: 900px) {
+        .content-technology__img-container {
+          order: 1;
+          width: 100%;
+          padding: 3rem 0 4rem 0; } }
+      .content-technology__img-container .vehicle {
+        max-width: none;
+        position: absolute;
+        right: -20rem; }
+        @media only screen and (max-width: 900px) {
+          .content-technology__img-container .vehicle {
+            max-width: 100%;
+            width: 100%;
+            right: 0;
+            position: relative; } }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0; }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none; }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth; }
+  
+  html {
+    font-size: 62.5%; }
+  
+  /* Set core body defaults */
+  body {
+    font-family: "Bellefair", serif;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5; }
+    @media only screen and (max-width: 550px) {
+      body {
+        overflow-x: hidden; } }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto; }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block; }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit; }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto; }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important; } }
+  
+  .container {
+    background: url("../assets/home/background-home-desktop.jpg"); }
+    @media only screen and (max-width: 900px) {
+      .container {
+        background: url("../assets/home/background-home-tablet.jpg"); } }
+    @media only screen and (max-width: 550px) {
+      .container {
+        background: url("../assets/home/background-home-mobile.jpg"); } }
+  
+  .container--destinations {
+    background: url("../assets/destination/background-destination-desktop.jpg"); }
+    @media only screen and (max-width: 900px) {
+      .container--destinations {
+        background: url("../assets/destination/background-destination-tablet.jpg"); } }
+    @media only screen and (max-width: 550px) {
+      .container--destinations {
+        background: url("../assets/destination/background-destination-mobile.jpg"); } }
+  
+  .container--crew {
+    background: url("../assets/crew/background-crew-desktop.jpg"); }
+    @media only screen and (max-width: 900px) {
+      .container--crew {
+        background: url("../assets/crew/background-crew-tablet.jpg"); } }
+    @media only screen and (max-width: 550px) {
+      .container--crew {
+        background: url("../assets/crew/background-crew-mobile.jpg"); } }
+  
+  .container--technology {
+    background: url("../assets/technology/background-technology-desktop.jpg"); }
+    @media only screen and (max-width: 900px) {
+      .container--technology {
+        background: url("../assets/technology/background-technology-tablet.jpg"); } }
+    @media only screen and (max-width: 550px) {
+      .container--technology {
+        background: url("../assets/technology/background-technology-mobile.jpg"); } }
+  
+  .container,
+  .container--destinations,
+  .container--crew,
+  .container--technology {
+    height: 100vh;
+    background-size: cover;
+    padding-top: 4rem;
+    overflow: hidden; }
+    @media only screen and (max-width: 900px) {
+      .container,
+      .container--destinations,
+      .container--crew,
+      .container--technology {
+        background-size: cover;
+        padding: 0; } }
+    @media only screen and (max-width: 550px) {
+      .container,
+      .container--destinations,
+      .container--crew,
+      .container--technology {
+        background-size: cover; } }
+  
+  #preloader {
+    background: #000125 url("../assets/shared/loader.gif") no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100; }
+  
